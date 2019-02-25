@@ -15,5 +15,14 @@ $ npm start
   - proyecto `ruteo-react-app` para explicar React Router
   - proyecto `vendor-app` en el cual vamos a realizar una pequeña web de proveedores aplicando todos los temas vistos del curso
 
+## Temas vistos hasta el momento
+
+- [x] Componentes
+- [ ] Ciclo de vida
+- [ ] Ruteo
+- [ ] Redux
+- [ ] Finalización Proyecto `vendor-app`
+
 **Nahuel Costamagna**
+
 **Cencosud**

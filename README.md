@@ -12,13 +12,16 @@ $ npm start
 
 ## proyectos
   - proyecto `ciclo-de-vida` para explicar el ciclo de vida de los componentes de React
-  - proyecto `ruteo-react-app` para explicar React Router
-  - proyecto `vendor-app` en el cual vamos a realizar una pequeña web de proveedores aplicando todos los temas vistos del curso
+  - proyecto `aplicacion-prueba` para explicar Composicion/Herencia, componente Controlados y No Controlados
+  - proyecto `vendor-app` en el cual vamos a realizar una pequeña web de proveedores aplicando todos los temas vistos del curso, veremos Ruteo y Redux
 
 ## Temas vistos hasta el momento
 
 - [x] Componentes
-- [ ] Ciclo de vida
+- [x] props y state
+- [x] Ciclo de vida
+- [ ] Composicion vs Herencia
+- [ ] Componentes Controlados y No Controlados
 - [ ] Ruteo
 - [ ] Redux
 - [ ] Finalización Proyecto `vendor-app`

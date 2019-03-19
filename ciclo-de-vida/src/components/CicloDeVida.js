@@ -1,33 +1,32 @@
 import React, { Component } from 'react';
+import ComponenteADesmontar from './ComponenteADesmontar'
 
 class CicloDeVida extends Component {
 
   constructor(){
-    console.log("Constructor");
     super();
     this.state = { mostrarComponente: true};
   }
 
   render(){
-    console.log("Render");
-    console.log(this.props);
     const {descripcion, atributoEjemplo} = this.props;
 
     if(this.state.mostrarComponente){
       return (
         <div className="CicloDeVida">
           <h2>{descripcion}</h2>
-          <button>
-            Descomntar Compoente
+          <ComponenteADesmontar />
+          <button onClick={() => this.setState({ mostrarComponente: false})}>
+            Desmontar Compoente
           </button>
         </div>);
     }else{
-        return (
-          <div className="CicloDeVida">
-            <button>
-              Montar Componente
-            </button>
-          </div>);
+      return (
+        <div className="CicloDeVida">
+          <button onClick={() => this.setState({ mostrarComponente: true})}>
+            Montar Componente
+          </button>
+        </div>);
     }
   }
 

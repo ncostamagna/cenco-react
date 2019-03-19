@@ -10,7 +10,7 @@ class App extends Component {
         <Titulo />
         <CicloDeVida
             descripcion="Ciclo de Vida"
-            atributoEjemplo="Sarasa"/>
+            atributoEjemplo="Sarasa" />
       </div>
     );
   }

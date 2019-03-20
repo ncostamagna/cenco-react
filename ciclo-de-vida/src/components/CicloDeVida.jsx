@@ -9,7 +9,7 @@ class CicloDeVida extends Component {
   }
 
   render(){
-    const {descripcion, atributoEjemplo} = this.props;
+    const {descripcion, atributoEjemplo, functionParaOcultar} = this.props;
 
     if(this.state.mostrarComponente){
       return (
@@ -19,6 +19,11 @@ class CicloDeVida extends Component {
           <button onClick={() => this.setState({ mostrarComponente: false})}>
             Desmontar Compoente
           </button>
+
+          <button onClick={functionParaOcultar}>
+            Ocultar Componente Padre
+          </button>
+          
         </div>);
     }else{
       return (

@@ -12,7 +12,7 @@ $ npm start
 
 ## proyectos
   - proyecto `ciclo-de-vida` para explicar el ciclo de vida de los componentes de React
-  - proyecto `aplicacion-prueba` para explicar Composicion/Herencia, componente Controlados y No Controlados
+  - proyecto `usuarios` para explicar Composicion/Herencia, componente Controlados y No Controlados y Ruteo
   - proyecto `vendor-app` en el cual vamos a realizar una pequeña web de proveedores aplicando todos los temas vistos del curso, veremos Ruteo y Redux
 
 ## Temas vistos hasta el momento
@@ -20,7 +20,7 @@ $ npm start
 - [x] Componentes
 - [x] props y state
 - [x] Ciclo de vida
-- [ ] Composicion vs Herencia
+- [x] Composicion vs Herencia
 - [ ] Componentes Controlados y No Controlados
 - [ ] Ruteo
 - [ ] Redux

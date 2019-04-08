@@ -11,7 +11,7 @@ export default class Header extends Component {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                <Link to="/" className="nav-item nav-link active">Home <span class="sr-only">(current)</span></Link>
+                <Link to="/" className="nav-item nav-link active">Home <span className="sr-only">(current)</span></Link>
                 <Link to="/products" className="nav-item nav-link" >Products</Link>
                 <Link to="/users" className="nav-item nav-link" >User</Link>
                 </div>

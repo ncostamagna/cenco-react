@@ -1,46 +1,42 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux';
 import Search from '../components/Products/Search';
 import List from '../components/Products/List';
+import { getProducts } from '../reducers';
+import { setFetchProducts } from '../actions/products';
 
-export default class ProductsContainer extends Component {
-
-    constructor(){
-        super();
-        this.state = {productos: []};
-    }
+class ProductsContainer extends Component {
 
   fetchProductos = () => {
-    this.setState({productos:[
-        {sku: 12321,
-        name: 'televisor',
-        precio: 15000,
-        tipo: 'RT'},
-        {sku: 23421,
-        name: 'Monitor',
-        precio: 5000,
-        tipo: 'RT'},
-        {sku: 98752,
-        name: 'Teclado',
-        precio: 2500,
-        tipo: 'ENV'}
-        ,{sku: 987882,
-        name: 'mouse',
-        precio: 200,
-        tipo: 'ENV'}
-    ]})
+    const products = [{sku:'1212121', name:'pinza'},
+    {sku:'333333', name:'PC'}];
+
+    this.props.serFetchProducts(products)
   }
 
 
   render() {
-      const {productos} = this.state;
+      const {products} = this.props;
 
     return (
       <div>
-        <Search>
-        </Search>
+        <Search 
+          fetchProductos={this.fetchProductos}/>
         <List
-            productos={productos}></List>
+            productos={products}>
+        </List>
       </div>
     )
   }
 }
+
+const mapDispatchToPropsActions = dispatch => ({
+  serFetchProducts: productos => dispatch(setFetchProducts(productos))
+});
+
+const mapStateToProps = state => ({
+  products: getProducts(state)
+})
+
+
+export default connect(mapStateToProps, mapDispatchToPropsActions)(ProductsContainer);
